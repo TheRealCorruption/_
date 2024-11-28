@@ -14,6 +14,7 @@
         .console {
             white-space: pre-wrap;
             word-wrap: break-word;
+            margin-bottom: 20px;
         }
         .center {
             text-align: center;
@@ -46,16 +47,10 @@
         const creatorUsername = "RX-CREATOR-2349-##02..erc";
         const customCommands = {
             "/help": "I can assist you with text-related tasks, solve math problems, and answer your questions.",
-            "/about": "RXAI is a Reflex Artificial Intelligence, capable of text-based interactions. I can help with grammar fixes, research, math problems, and general 
-            assistance.",
-            "/CreatorAbout": "",
-            "/SaveChat": "You want to save this chat and continue later?  'yes' or 'no'?",
-         //If yes then save every chat in numbers and save it on a list savor or something
-         //if no then "Saving cancled Cancled.
+            "/about": "RXAI is a Reflex Artificial Intelligence, capable of text-based interactions. I can help with grammar fixes, research, math problems, and general assistance.",
+            "/CreatorAbout": "RXAI is created by RX-CREATOR-2349, a sophisticated AI designed to assist with everyday text tasks and answer questions.",
+            "/SaveChat": "You want to save this chat and continue later? 'yes' or 'no'?",
             "/LoadChat": "Please paste your 'RXSAVECODE'."
-         //If containts letters syllabols or puncuations or not on save list, Then "Invalid Code"
-         //If save is in the list. (Load chat from save list using the RXSAVECODE) then say "Loading chat.." if it can load it, or if it fails to load chat it will say "Failed to load last chat due to a unexpected error."
-            
         };
 
         function getTimeOfDay() {
