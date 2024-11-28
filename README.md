@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,11 +50,12 @@
     </style>
 </head>
 <body>
-    <div id="console" class="console center"></div>
-
+    <!-- Always display version and serial number at the top -->
     <div class="footer">
-        <p>Version: 1.00 | Model: RXAI-SN-001</p>
+        <p id="version-info">Version: 1.00 | Model: RXAI-SN-001</p>
     </div>
+
+    <div id="console" class="console center"></div>
 
     <script>
         const version = "1.00";
@@ -72,7 +72,7 @@
         let isLoggedIn = false;
 
         // Display initial version and serial number
-        document.querySelector(".footer").innerHTML = `Version: ${version} | Model: ${serialNumber}`;
+        document.getElementById("version-info").innerHTML = `Version: ${version} | Model: ${serialNumber}`;
 
         function printText(text, delay) {
             return new Promise(resolve => {
@@ -227,4 +227,3 @@
     </script>
 </body>
 </html>
-
